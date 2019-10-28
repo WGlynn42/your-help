@@ -14,8 +14,6 @@ User.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 1,
   name: "Christopher's Haven",
   street_address: "One Emerson Place, Suite 2N",
   city: "Boston",
@@ -34,8 +32,6 @@ Charity.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 2,
   name: "Crohn's and Colitis Foundation - New England",
   street_address: "72 River Park Street, Suite 202",
   city: "Needham Heights",
@@ -54,8 +50,6 @@ Charity.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 3,
   name: "Greater Boston Food Bank",
   street_address: "70 South Bay Avenue",
   city: "Boston",
@@ -74,8 +68,6 @@ Charity.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 4,
   name: "OneMission",
   street_address: "69 Milk Street, Suite 300",
   city: "Westborough",
@@ -94,8 +86,6 @@ Charity.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 5,
   name: "Pitching in for Kids",
   street_address: "One South Market Building, 4th Floor",
   city: "Boston",
@@ -114,8 +104,6 @@ Charity.create(
 )
 
 Charity.create(
-  user_id: 1,
-  event_id: 6,
   name: "The Jimmy Fund",
   street_address: "10 Brookline Place West",
   city: "Brookline",
@@ -135,7 +123,6 @@ Charity.create(
 
 Event.create(
   charity_id: 1,
-  user_id: 1,
   name: "6th Annual Christopher's Haven Benefit",
   description: "Fashion show featuring current guests and alumni of Christopher's Haven!",
   event_date: "May 17, 2020",
@@ -157,7 +144,6 @@ Event.create(
 
 Event.create(
   charity_id: 2,
-  user_id: 1,
   name: "A Night in White",
   description: "A Night in White for the Cure",
   event_date: "June 20, 2020",
@@ -179,7 +165,6 @@ Event.create(
 
 Event.create(
   charity_id: 3,
-  user_id: 1,
   name: "Growing Healthy Futures",
   description: "On September 15, 2020, The Greater Boston Food Bank (GBFB) will be hosting Growing Healthy Futures: A Farm to Table Dinner. Proceeds from the event will support GBFB’s School-based Pantries program.",
   event_date: "September 15, 2020",
@@ -201,7 +186,6 @@ Event.create(
 
 Event.create(
   charity_id: 4,
-  user_id: 1,
   name: "OneMission Buzz Off",
   description: "Kids with cancer don’t just feel sick. They feel different from everyone else.  By shaving your head, in less than five minutes you can show them they are not alone and that others really do care! All that stands between you and a life-changing experience is a head of hair!",
   event_date: "June 1, 2020",
@@ -223,7 +207,6 @@ Event.create(
 
 Event.create(
   charity_id: 5,
-  user_id: 1,
   name: "Candy Land Playathon",
   description: "Each December, Pitching in for Kids partners with our good friends at Hasbro Toys for a Candy Land Play-A-Thon in the Upper Rotunda at the historic Faneuil Hall in Boston. This tradition has become one of Boston's signature holiday events! Guests will enjoy a sampling of food provided by the vendors in Faneuil Hall. Each child in attendance gets a free Hasbro toy or game!",
   event_date: "December 1, 2019",
@@ -245,7 +228,6 @@ Event.create(
 
 Event.create(
   charity_id: 6,
-  user_id: 1,
   name: "Chefs for Jimmy",
   description: "Chefs for Jimmy offers participants a memorable evening with delicious local dishes, raising money for cancer research and patient care at Dana-Farber.",
   event_date: "January 24, 2020",
