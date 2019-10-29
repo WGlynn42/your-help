@@ -17,4 +17,8 @@ class Charity < ApplicationRecord
 
   has_many :events
 
+  def address2
+    "#{city}, #{state} #{zip}"
+  end
+
 end
