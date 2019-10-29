@@ -9,13 +9,14 @@
 User.create(
   first_name: "Will",
   last_name: "Glynn",
+  password: "password",
   email: "wglynn42@gmail.com",
-  phone: "555-123-4567"
+  password_confirmation: "password"
 )
 
 Charity.create(
   name: "Christopher's Haven",
-  street_address: "One Emerson Place, Suite 2N",
+  address: "One Emerson Place, Suite 2N",
   city: "Boston",
   state: "MA",
   zip: "02114",
@@ -26,14 +27,14 @@ Charity.create(
   photo: "https://images.app.goo.gl/Yn1zNjYk6XyURXGC6",
   contact_name: "Joyce Duvall",
   contact_role: "Executive Director",
-  contact_phone: null,
+  contact_phone: "857-233-4178",
   contact_email: "joyce.duvall@christophershaven.org",
   mission_statement: "Christopher's Haven touches people’s lives in unimaginable ways. It is their home away from home when their child or grandchild is receiving life saving cancer treatment. It is not just a place to stay. It is a place to return to after a hard day, and share experiences with people living similar nightmares. It is a happy place actually, filled with love, support, activities, volunteers, and warmth. It contributes to the healing process while going through treatment and long afterwards. It is family centric, caring not only for the patient, but the entire family unit. There are many people who’s lives have been touched by Christopher’s Haven, and they and their families would like an opportunity to give back financially to help support the organization."
 )
 
 Charity.create(
   name: "Crohn's and Colitis Foundation - New England",
-  street_address: "72 River Park Street, Suite 202",
+  address: "72 River Park Street, Suite 202",
   city: "Needham Heights",
   state: "MA",
   zip: "02494",
@@ -44,14 +45,14 @@ Charity.create(
   photo: "https://images.app.goo.gl/5R89o3j4ftoPmDmr7",
   contact_name: "Kimberly F. Snapper",
   contact_role: "Executive Director",
-  contact_phone: null,
+  contact_phone: "781-449-0324",
   contact_email: "kfredericksnapper@crohnscolitisfoundation.org",
   mission_statement: "We serve Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont by funding research, raising awareness and providing education and support to inflammatory bowel disease patients and caregivers."
 )
 
 Charity.create(
   name: "Greater Boston Food Bank",
-  street_address: "70 South Bay Avenue",
+  address: "70 South Bay Avenue",
   city: "Boston",
   state: "MA",
   zip: "02118",
@@ -62,32 +63,32 @@ Charity.create(
   photo: "https://images.app.goo.gl/GwoBABAF62aphDp58",
   contact_name: "Catherine D'Amato",
   contact_role: "President and CEO",
-  contact_phone: null,
-  contact_email: null,
+  contact_phone: "617-427-5200",
+  contact_email: "cdamato@gbfb.org",
   mission_statement: "The Greater Boston Food Bank works passionately to end hunger across Eastern Massachusetts by providing our neighbors in need the healthy food and resources they need to thrive."
 )
 
 Charity.create(
   name: "OneMission",
-  street_address: "69 Milk Street, Suite 300",
+  address: "69 Milk Street, Suite 300",
   city: "Westborough",
   state: "MA",
   zip: "01581",
-  phone: "5086289090",
+  phone: "508-628-9090",
   email: "info@onemission.org",
   website: "www.onemission.org",
   donation_page: "https://secure.onemissionbuzzoff.org/registrant/DonationPage.aspx?eventid=233861&langpref=en-CA&Referrer=https%3a%2f%2fonemission.org%2f",
   photo: "https://images.app.goo.gl/84doScQ5CyMqMuHt6",
   contact_name: "Ashley Haseotes",
   contact_role: "President & Founder",
-  contact_phone: null,
+  contact_phone: "508-628-9090",
   contact_email: "ashley@onemission.org",
   mission_statement: "One Mission is a pediatric cancer charity that does whatever it takes to get kids through cancer. One Mission programs make living in the hospital less lonely and stressful, bring back joy in a time of fear and uncertainty, and give kids and their loved ones the support they need to get through the emotional and financial challenges of treatment."
 )
 
 Charity.create(
   name: "Pitching in for Kids",
-  street_address: "One South Market Building, 4th Floor",
+  address: "One South Market Building, 4th Floor",
   city: "Boston",
   state: "MA",
   zip: "02109",
@@ -98,14 +99,14 @@ Charity.create(
   photo: "https://images.app.goo.gl/ydiYemy5ThM3ULSi8",
   contact_name: "Kevin  Ward",
   contact_role: "Event Director",
-  contact_phone: null,
+  contact_phone: "617-367-3322",
   contact_email: "kevin@pitchinginforkids.org",
   mission_statement: "Pitching in for Kids, Inc. is a nonprofit organization dedicated to providing specifically earmarked grants designed to improve the lives of children across the New England region through sports-related fundraising events and programs."
 )
 
 Charity.create(
   name: "The Jimmy Fund",
-  street_address: "10 Brookline Place West",
+  address: "10 Brookline Place West",
   city: "Brookline",
   state: "MA",
   zip: "02445",
@@ -125,124 +126,100 @@ Event.create(
   charity_id: 1,
   name: "6th Annual Christopher's Haven Benefit",
   description: "Fashion show featuring current guests and alumni of Christopher's Haven!",
-  event_date: "May 17, 2020",
-  month: "05",
-  date: "17",
-  year: "2020",
-  start_time: "5:30",
-  start_time_of_day: "pm",
-  end_time: "9:00",
-  end_time_of_day: "pm",
+  event_date: "2020-05-17",
+  start_time: "5:30pm",
+  end_time: "9:00pm",
   venue:"State Room",
   address: "60 State Street",
   city: "Boston",
   state: "MA",
   zip: "02109",
   venue_website: "https://longwoodvenues.com/venues/boston-event-venue/",
-  event_website: "http://www.christophershaven.org/upcoming-events/"
+  event_page: "http://www.christophershaven.org/upcoming-events/",
+  event_photo: "https://images.app.goo.gl/noqVjtrFXXxUhAhx7"
 )
 
 Event.create(
   charity_id: 2,
   name: "A Night in White",
   description: "A Night in White for the Cure",
-  event_date: "June 20, 2020",
-  month: "06",
-  date: "20",
-  year: "2020",
-  start_time: "6:00",
-  start_time_of_day: "pm",
-  end_time: "10:00",
-  end_time_of_day: "pm",
+  event_date: "2020-06-20",
+  start_time: "6:00pm",
+  end_time: "10:00pm",
   venue: "Artists For Humanity EpiCenter",
   address: "100 W 2nd St",
   city: "Boston",
   state: "MA",
   zip: "02127",
   venue_website: "http://afhboston.org/epicenter.html",
-  event_website: "https://e.givesmart.com/events/cer/"
+  event_page: "https://e.givesmart.com/events/cer/",
+  event_photo: "https://images.app.goo.gl/S8q54QGdQg64W5He6"
 )
 
 Event.create(
   charity_id: 3,
   name: "Growing Healthy Futures",
   description: "On September 15, 2020, The Greater Boston Food Bank (GBFB) will be hosting Growing Healthy Futures: A Farm to Table Dinner. Proceeds from the event will support GBFB’s School-based Pantries program.",
-  event_date: "September 15, 2020",
-  month: "09",
-  date: "15",
-  year: "2020",
-  start_time: "5:30",
-  start_time_of_day: "pm",
-  end_time: "9:00",
-  end_time_of_day: "pm",
+  event_date: "2020-09-15",
+  start_time: "5:30pm",
+  end_time: "9:00pm",
   venue: "Wright-Locke Farm",
   address: "78 Ridge Street",
   city: "Winchester",
   state: "MA",
   zip: "01890",
   venue_website: "https://www.wlfarm.org/",
-  event_website: "https://www.gbfb.org/get-involved/events/signature-events/growing-healthy-futures/"
+  event_page: "https://www.gbfb.org/get-involved/events/signature-events/growing-healthy-futures/",
+  event_photo: "https://images.app.goo.gl/qmRXpC9ZaSLecLLY9"
 )
 
 Event.create(
   charity_id: 4,
   name: "OneMission Buzz Off",
   description: "Kids with cancer don’t just feel sick. They feel different from everyone else.  By shaving your head, in less than five minutes you can show them they are not alone and that others really do care! All that stands between you and a life-changing experience is a head of hair!",
-  event_date: "June 1, 2020",
-  month: "06",
-  date: "01",
-  year: "2020",
-  start_time: "9:00",
-  start_time_of_day: "am",
-  end_time: "3:00",
-  end_time_of_day: "pm",
+  event_date: "2020-06-01",
+  start_time: "9:00am",
+  end_time: "3:00pm",
   venue: "Gillette Stadium",
   address: "One Patriot Place",
   city: "Foxboro",
   state: "MA",
   zip: "02035",
   venue_website: "https://www.gillettestadium.com/",
-  event_website: "https://buzzforkids.org/"
+  event_page: "https://buzzforkids.org/",
+  event_photo: "https://images.app.goo.gl/uS7Q81jEcKcDqoLW6"
 )
 
 Event.create(
   charity_id: 5,
   name: "Candy Land Playathon",
   description: "Each December, Pitching in for Kids partners with our good friends at Hasbro Toys for a Candy Land Play-A-Thon in the Upper Rotunda at the historic Faneuil Hall in Boston. This tradition has become one of Boston's signature holiday events! Guests will enjoy a sampling of food provided by the vendors in Faneuil Hall. Each child in attendance gets a free Hasbro toy or game!",
-  event_date: "December 1, 2019",
-  month: "12",
-  date: "01",
-  year: "2019",
-  start_time: "10:00",
-  start_time_of_day: "am",
-  end_time: "1:00",
-  end_time_of_day: "pm",
+  event_date: "2019-12-01",
+  start_time: "10:00am",
+  end_time: "1:00pm",
   venue: "Faneuil Hall Marketplace",
   address: "4 South Market Street",
   city: "Boston",
   state: "MA",
   zip: "02109",
   venue_website: "https://faneuilhallmarketplace.com/",
-  event_website: "https://www.pitchinginforkids.org/events"
+  event_page: "https://www.pitchinginforkids.org/events",
+  event_photo: "https://images.app.goo.gl/a1Xb3SCYNquVrACQA"
 )
 
 Event.create(
   charity_id: 6,
   name: "Chefs for Jimmy",
   description: "Chefs for Jimmy offers participants a memorable evening with delicious local dishes, raising money for cancer research and patient care at Dana-Farber.",
-  event_date: "January 24, 2020",
-  month: "01",
-  date: "24",
-  year: "2020",
-  start_time: "6:30",
-  start_time_of_day: "pm",
-  end_time: "9:30",
-  end_time_of_day: "pm",
+  event_date: "2020-01-24",
+  start_time: "6:30pm",
+  end_time: "9:30pm",
   venue: "Chez Josef",
   address: "176 Shoemaker Lane",
   city: "Agawam",
   state: "MA",
   zip: "01001",
   venue_website: "https://www.chezjosef.com/",
-  event_website: "http://www.jimmyfund.org/events/cancer-fundraising-events/chefs-for-jimmy/"
+  event_page: "http://www.jimmyfund.org/events/cancer-fundraising-events/chefs-for-jimmy/",
+  event_photo: "https://images.app.goo.gl/KGWiMFasucj4rxSu5"
 )
