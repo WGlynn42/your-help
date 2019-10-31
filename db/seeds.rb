@@ -136,7 +136,7 @@ Event.create(
   zip: "02109",
   venue_website: "https://longwoodvenues.com/venues/boston-event-venue/",
   event_page: "http://www.christophershaven.org/upcoming-events/",
-  event_photo: "https://images.app.goo.gl/noqVjtrFXXxUhAhx7"
+  event_photo: "https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/10481197_10153321398539036_3436042841035186413_o.jpg?_nc_cat=106&_nc_oc=AQnB7FeLwVbezQeDHeprHMBFWdhSO6zoR45BN52lZZEywG67xTBC_17HSIHiBeaf8NuOd5nuXBGMqsAX619PAIbY&_nc_ht=scontent.fbed1-2.fna&oh=c20fe6c7334b7f1ea909392991640023&oe=5E178B6E"
 )
 
 Event.create(
@@ -153,7 +153,7 @@ Event.create(
   zip: "02127",
   venue_website: "http://afhboston.org/epicenter.html",
   event_page: "https://e.givesmart.com/events/cer/",
-  event_photo: "https://images.app.goo.gl/S8q54QGdQg64W5He6"
+  event_photo: "https://scontent.fbed1-1.fna.fbcdn.net/v/t31.0-8/13723930_10154354490799508_6907866763438034477_o.jpg?_nc_cat=105&_nc_oc=AQm-Jvk37WNGllrHJK4H35mUa408MRkBBKycS7ut3BUH4rQ4wbvA8BOAnWW8tRrxSrokI5XpPOjgaKqNWmeJx_H_&_nc_ht=scontent.fbed1-1.fna&oh=c390a20043d985fde4d925572758baa3&oe=5E63B37D"
 )
 
 Event.create(
@@ -170,7 +170,7 @@ Event.create(
   zip: "01890",
   venue_website: "https://www.wlfarm.org/",
   event_page: "https://www.gbfb.org/get-involved/events/signature-events/growing-healthy-futures/",
-  event_photo: "https://images.app.goo.gl/qmRXpC9ZaSLecLLY9"
+  event_photo: "https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/4403_83511506729_6425378_n.jpg?_nc_cat=110&_nc_oc=AQlfq0QdCnl1EtyG7NRsW1bYFkvDmFqIcwEwUDbXnAggHAHyojddI1e6yCTrFcay8sAoZ0MwKEDD1RJggrHIj_bg&_nc_ht=scontent.fbed1-1.fna&oh=0c92a5c80ee80d6863f7c90e3fe95c9d&oe=5E58C51A"
 )
 
 Event.create(
@@ -187,7 +187,7 @@ Event.create(
   zip: "02035",
   venue_website: "https://www.gillettestadium.com/",
   event_page: "https://buzzforkids.org/",
-  event_photo: "https://images.app.goo.gl/uS7Q81jEcKcDqoLW6"
+  event_photo: "https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/66842963_10157328530035419_1759975261715038208_o.jpg?_nc_cat=101&_nc_oc=AQmQDrtVbeHQCBSqJIVMIELPZj56e-fbiflabHOCvrCfR6Ta3sPon8gxTm_Aiuj83RxsgU8q8wKwDG5lMURu3Oj3&_nc_ht=scontent.fbed1-1.fna&oh=087bce5755b25bef2ac63c27ba9f0495&oe=5E1C627D"
 )
 
 Event.create(
@@ -204,7 +204,7 @@ Event.create(
   zip: "02109",
   venue_website: "https://faneuilhallmarketplace.com/",
   event_page: "https://www.pitchinginforkids.org/events",
-  event_photo: "https://images.app.goo.gl/a1Xb3SCYNquVrACQA"
+  event_photo: "https://scontent.fbed1-1.fna.fbcdn.net/v/t1.0-9/25158305_1542458312508311_5849150519902862578_n.jpg?_nc_cat=110&_nc_oc=AQmnGG0KbIJB8NHXiOAHAurwhtShNdJtovhGivHqWFlkN6iz5jz6TQu98-ybcxUP1gkcZYq_ONPA3-Nv-J7fsL3J&_nc_ht=scontent.fbed1-1.fna&oh=7525348be8d592a92a4af956d6240170&oe=5E1DA1F4"
 )
 
 Event.create(
@@ -221,5 +221,5 @@ Event.create(
   zip: "01001",
   venue_website: "https://www.chezjosef.com/",
   event_page: "http://www.jimmyfund.org/events/cancer-fundraising-events/chefs-for-jimmy/",
-  event_photo: "https://images.app.goo.gl/KGWiMFasucj4rxSu5"
+  event_photo: "https://scontent.fbed1-2.fna.fbcdn.net/v/t1.0-9/2305_53917190769_1471_n.jpg?_nc_cat=102&_nc_oc=AQlRijrGW0Mqq4EwVb_fUdw7ql42ghO3hbDGLaeOGoCXD9l_mU24RDORIWQuqCrV5RuhG4JIkpQj2SEU6TXeRj2j&_nc_ht=scontent.fbed1-2.fna&oh=67dc37e7c954cb23ad36c45726fa87a1&oe=5E5170F7"
 )

@@ -15,3 +15,7 @@ class Event < ApplicationRecord
   has_many :signups
   has_many :users, through: :signups
 end
+
+def formatTime
+  return event.time("%Y%m%d")
+end

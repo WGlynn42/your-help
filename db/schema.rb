@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2019_10_29_154125) do
   create_table "events", force: :cascade do |t|
     t.string "name", null: false
     t.text "description", null: false
-    t.string "event_date", null: false
+    t.date "event_date", null: false
     t.string "start_time", null: false
     t.string "end_time", null: false
     t.string "venue", null: false

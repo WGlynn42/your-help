@@ -24,7 +24,19 @@
   background-color: lightblue;
 }
 
+.event-show-header {
+  background-color: lightblue;
+}
+
 .charity-index-image {
   border-style: solid;
   border-color: black;
+  width: 33%;
+  max-width: 180px;
+}
+
+.event-index-image {
+  border-style: solid;
+  border-color: black;
+  max-width: 240px;
 }
