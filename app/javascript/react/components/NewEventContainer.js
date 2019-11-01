@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Switch, BrowserRouter } from "react-router-dom"
+import { Route, Switch, BrowserRouter, Redirect } from "react-router-dom"
 
 import NewEventForm from './NewEventForm'
 
 const NewEventContainer = props => {
   const [errorList, setErrorList] = useState([])
   const [charities, setCharities] = useState([])
+  const [shouldRedirect, setShouldRedirect] = useState(false)
   const [events, setEvents] = useState({
       name: "",
       charity_id: "",
@@ -49,7 +50,7 @@ const NewEventContainer = props => {
     })
   }, [charities.length])
 
-  const onEventSubmitted = (newEvent, formClear) => {
+  const onEventSubmitted = (newEvent, clearForm) => {
     fetch(`/api/v1/events/`, {
       method: 'POST',
       credentials: "same-origin",
@@ -70,20 +71,24 @@ const NewEventContainer = props => {
     })
     .then(response => response.json())
     .then(eventBody => {
-      if (eventBody.event){
-        formClear()
-        setErrorList([])
-        setReviews([...events, eventBody.event])
-      } else {
-        setErrorList(eventBody.errors)
+      if (eventBody.new_event){
+        debugger
+        // clearForm()
+        // setErrorList([])
+        setEvents(eventBody.new_event)
+        setShouldRedirect(true)
+        console.log(shouldRedirect)
       }
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
     }
+    if (shouldRedirect){
+      debugger
+      return <Redirect to="/events" />
+    }
 
   return (
     <div className="event-form-wrapper">
-      {errors}
       <NewEventForm
         onEventSubmitted={onEventSubmitted}
         charities={charities}
@@ -91,5 +96,6 @@ const NewEventContainer = props => {
     </div>
   )
 }
+
 
 export default NewEventContainer
