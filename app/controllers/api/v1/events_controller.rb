@@ -15,7 +15,6 @@ class Api::V1::EventsController < ApiController
   def create
     charity = Charity.all
     new_event = Event.new(event_params)
-    binding.pry
     if new_event.save
       render json: {
         new_event: new_event,
@@ -29,6 +28,6 @@ class Api::V1::EventsController < ApiController
 
   private
   def event_params
-    params.require(:event).permit(:name, :description, :eventDate, :startTime, :venue, :address, :city, :state, :zip, :venueWebsite, :eventPage, :eventPhoto)
+    params.require(:event).permit(:name, :description, :event_date, :start_time, :end_time, :venue, :address, :city, :state, :zip, :venue_website, :event_page, :event_photo, :charity_id)
   end
 end

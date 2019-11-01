@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const NewEventForm = (props) => {
   const [newEvent, setNewEvent] = useState({
     name: "",
+    charity_id: "",
     description: "",
     event_date: "",
     start_time: "",
@@ -27,6 +28,7 @@ const NewEventForm = (props) => {
   const clearForm = () => {
     setNewEvent({
       name: "",
+      charity_id: "",
       description: "",
       event_date: "",
       start_time: "",
@@ -51,7 +53,7 @@ const NewEventForm = (props) => {
   }
 
   let charityOptions = props.charities.map((charity) =>
-        <option key={charity.id}>{charity.name}</option>
+        <option key={charity.id} value={charity.id}>{charity.name}</option>
     );
 
   return(
@@ -65,7 +67,7 @@ const NewEventForm = (props) => {
             <input name="name" id="name" type="text" value={newEvent.name} onChange={handleChange}/>
 
             <label>Charity: </label>
-            <select onChange={handleChange}>
+            <select  name="charity_id" id="charity_id" onChange={handleChange}>
               {charityOptions}
             </select>
 

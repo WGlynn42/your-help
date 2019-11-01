@@ -24,6 +24,29 @@ const EventIndexContainer = props => {
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
 
+  const deleteEvent = (thisEvent) => {
+  fetch(`api/v1/events/${thisEvent}.json`, {
+    credentials: 'same-origin',
+    method: 'DELETE',
+    headers: {'Content-Type': 'application/json'}
+  })
+  .then((response) => {
+    if (response.ok) {
+      return response
+    } else {
+      let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage)
+      throw(error)
+    }
+  })
+  .then(response => response.json())
+  .then(parkBody => {
+    setEvents(eventBody.event)
+    setCurrentUserId(parkBody.scope[0].id)
+  })
+  .catch(error => console.error(`Error in fetch: ${error.message}`))
+}
+
   const eventTiles = events.map((event) => {
     return(
       <EventTile
