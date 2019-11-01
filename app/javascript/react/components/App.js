@@ -13,7 +13,7 @@ export const App = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={CharitiesIndexContainer}/>
+        <Route exact path="/" component={HomePage}/>
         <Route exact path="/charities" component={CharitiesIndexContainer}/>
         <Route exact path="/charities/:id" component={CharityShowPage}/>
         <Route exact path="/events" component={EventIndexContainer}/>
