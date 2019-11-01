@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, BrowserRouter } from "react-router-dom"
 
-import HomePage from './HomePage'
+// import HomePage from './HomePage'
 import CharitiesIndexContainer from './CharitiesIndexContainer'
 import CharityShowPage from './CharityShowPage'
 import EventIndexContainer from './EventIndexContainer'
