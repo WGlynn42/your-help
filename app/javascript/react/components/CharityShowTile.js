@@ -3,7 +3,7 @@ import React from 'react'
 const CharityShowTile = props => {
 
   let image
-  if (props.photoRef !== null) {
+  if (props.photo !== null) {
     image = <img className="charity-show-image text-center" src={props.photo} width="180" height="30"></img>
   }
 

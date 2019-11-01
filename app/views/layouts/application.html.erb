@@ -8,13 +8,13 @@
 </head>
 <body>
 
-  <nav class="top-bar">
+  <nav class="top-bar grid-x">
     <h1><a href="/">Your-Help</a></h1>
     <section class="top-bar-section">
-      <ul class="center">
-        <li><%= link_to 'Charities', charities_path %></li>
-        <li><%= link_to 'Events', events_path %></li>
-      </ul>
+      <div class="top-bar-charities-button">
+        <%= link_to 'Charities', charities_path %>
+        <%= link_to 'Events', events_path %>
+      </div>
     </section>
 
     <section class="top-bar-section">

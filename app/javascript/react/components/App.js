@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch, BrowserRouter } from "react-router-dom"
 
-// import HomePage from './HomePage'
+import HomePage from './HomePage'
 import CharitiesIndexContainer from './CharitiesIndexContainer'
 import CharityShowPage from './CharityShowPage'
 import EventIndexContainer from './EventIndexContainer'
@@ -13,7 +13,7 @@ export const App = (props) => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={CharitiesIndexContainer}/>
+        <Route exact path="/" component={HomePage}/>
         <Route exact path="/charities" component={CharitiesIndexContainer}/>
         <Route exact path="/charities/:id" component={CharityShowPage}/>
         <Route exact path="/events" component={EventIndexContainer}/>
