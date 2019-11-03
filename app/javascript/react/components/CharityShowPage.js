@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Route, Switch, BrowserRouter } from "react-router-dom"
 
 import CharityShowTile from './CharityShowTile'
+import CharityShowContainer from './CharityShowContainer'
 
 const CharityShowPage = props => {
   const [errorList, setErrorList] = useState([])
@@ -52,26 +53,50 @@ const CharityShowPage = props => {
   }, [])
 
   return (
-    <div className="charity-show-wrapper">
-      <CharityShowTile
-        name={charityData.name}
-        address={charityData.address}
-        address2={charityData.address2}
-        city={charityData.city}
-        state={charityData.state}
-        zip={charityData.zip}
-        phone={charityData.phone}
-        email={charityData.email}
-        website={charityData.website}
-        donationPage={charityData.donation_page}
-        photo={charityData.photo}
-        missionStatement={charityData.mission_statement}
-        contactName={charityData.contact_name}
-        contactRole={charityData.contact_role}
-        contactPhone={charityData.contact_phone}
-        contactEmail={charityData.contact_email}
-      />
+    <div>
+      <div className="charity-show-wrapper">
+        <CharityShowTile
+          name={charityData.name}
+          address={charityData.address}
+          address2={charityData.address2}
+          city={charityData.city}
+          state={charityData.state}
+          zip={charityData.zip}
+          phone={charityData.phone}
+          email={charityData.email}
+          website={charityData.website}
+          donationPage={charityData.donation_page}
+          photo={charityData.photo}
+          missionStatement={charityData.mission_statement}
+          contactName={charityData.contact_name}
+          contactRole={charityData.contact_role}
+          contactPhone={charityData.contact_phone}
+          contactEmail={charityData.contact_email}
+        />
     </div>
+
+      <div className="charity-show-container">
+          <CharityShowContainer
+            charityId={charityData.id}
+            name={charityData.name}
+            address={charityData.address}
+            address2={charityData.address2}
+            city={charityData.city}
+            state={charityData.state}
+            zip={charityData.zip}
+            phone={charityData.phone}
+            email={charityData.email}
+            website={charityData.website}
+            donationPage={charityData.donation_page}
+            photo={charityData.photo}
+            missionStatement={charityData.mission_statement}
+            contactName={charityData.contact_name}
+            contactRole={charityData.contact_role}
+            contactPhone={charityData.contact_phone}
+            contactEmail={charityData.contact_email}
+            />
+        </div>
+      </div>
   )
 }
 

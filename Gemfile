@@ -54,4 +54,6 @@ gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails', '~> 6.5'
 gem 'webpacker', '~> 3.3'
+gem 'google-webfonts', '~> 0.3.2'
 gem "fog-aws"
+

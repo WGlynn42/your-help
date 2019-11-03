@@ -111,6 +111,7 @@ GEM
       sprockets-es6 (>= 0.9.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    google-webfonts (0.3.2)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     image_processing (1.9.3)
@@ -276,6 +277,7 @@ DEPENDENCIES
   factory_bot
   fog-aws
   foundation-rails (~> 6.5)
+  google-webfonts (~> 0.3.2)
   jbuilder (~> 2.5)
   jquery-rails
   launchy
