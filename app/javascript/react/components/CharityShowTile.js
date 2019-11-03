@@ -9,11 +9,11 @@ const CharityShowTile = props => {
 
   return (
     <div className="grid-x">
-      <div className="cell small-12 text-center" id="event-name-container">
+      <div className="cell small-12 text-center" id="charity-name-container">
         <h2>{props.name}</h2>
       </div>
-      <div className="grid-x">
-        <div className="cell small-6" id="color-container">
+      <div className="grid-x charity-left-container">
+        <div className="cell small-6" id="charity-logo">
           {image}
           <div className="charity-show-important-links">
             <div className="charity-show-website-link">
