@@ -49,9 +49,13 @@ const CharitiesIndexContainer = props => {
   })
 
   return(
-    <div className="grid-x grid-padding-x">
-      <div className="cell">
-      {charityTiles}
+    <div className="charity-index-page">
+      <div className="charity-index-page-top text-center">
+        <h2 id="charity-index-title">Local Charities</h2>
+        <h5>Select a charity to see more information</h5>
+      </div>
+      <div className="charity-tile" style={{width: "300px"}}>
+        {charityTiles}
       </div>
     </div>
   )

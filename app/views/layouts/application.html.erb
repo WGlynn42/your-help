@@ -9,25 +9,25 @@
 <body>
 
   <nav class="top-bar grid-x">
-    <h1><a href="/" style="color: white, font-weight: bold">Your-Help</a></h1>
+    <div class="top-bar-logo">
+      <h1><a href="/" style="color: white;">Your-Help</a></h1>
+    </div>
     <section>
-      <div class="top-bar-charities-button">
-        <%= link_to 'Charities', charities_path %>
-      </div>
-      <div class="top-bar-events-button">
-        <%= link_to 'Events', events_path %>
-      </div>
+        <div class="top-bar-charities-button">
+          <%= link_to 'Charities', charities_path %>
+        </div>
+        <div class="top-bar-events-button style="color: white;"">
+          <%= link_to 'Events', events_path %>
+        </div>
     </section>
 
-    <section class="top-bar-right-section">
+    <section class="top-bar-right-section large-2 columns">
       <div class="top-bar-signout-button">
         <%- if current_user -%>
           <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
         <%- else -%>
-          <div class="top-bar-signup-button">
+          <div class="top-bar-signup-buttons">
             <%= link_to 'Sign Up', new_user_registration_path %>
-          </div>
-          <div class="top-bar-signin-button">
             <%= link_to 'Sign In', new_user_session_path %>
           </div>
         <%- end -%>
