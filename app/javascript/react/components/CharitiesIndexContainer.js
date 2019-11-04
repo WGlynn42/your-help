@@ -51,7 +51,7 @@ const CharitiesIndexContainer = props => {
   return(
     <div>
     <div className="charity-index-page" id="charity-index-title">
-      <h2>Local Charities</h2>
+      <h3>Local Charities</h3>
       <h5>Select a charity to see more information</h5>
     </div>
 
@@ -61,7 +61,7 @@ const CharitiesIndexContainer = props => {
           {charityTiles}
         </div>
       </div>
-      <div className="columns large-3 charity-index-page-background">
+      <div className="columns large -3 charity-index-page-background">
       </div>
     </div>
   </div >

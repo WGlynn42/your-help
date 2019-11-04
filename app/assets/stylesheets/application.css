@@ -18,16 +18,23 @@
  */
 
 .top-bar {
+  font-family: 'Playball', sans-serif;
   background-color: #1779ba;
   height: 120px;
   padding-left: 25px;
+}
+
+#top-bar-logo {
+  color: white;
+  font-family: 'Playball', sans-serif;
+
 }
 
 .top-bar-button {
   color: white;
   vertical-align: middle;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   display: inline-block;
   height: 40px;
@@ -104,13 +111,14 @@
 .charity-index-page-background {
   background-image: url("https://images.unsplash.com/photo-1516558781830-2c603b601b59?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jessica-podraza-ZvNaAGYVlEc-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
-  opacity: 75%;
+  border-style: solid;
+  border-color: black;
  }
 
 .card {
-  width: 300px;
+  width: 400px;
   font-weight: bold;
   border-style: solid;
   border-color: black;
