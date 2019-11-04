@@ -9,18 +9,17 @@ const EventTile = props => {
   }
 
   return(
-    <div className="cell small-12 large-6">
-      <div className="card event-tile">
-        <div className="card-section grid-x grid-padding-x">
-          <div className="cell small-2 large-4 center event-index-image">
-            {image}
-          </div>
-          <div className="cell small-10 large-8">
-            <h3><Link to={`/events/${props.id}`}>{props.name}</Link></h3>
-            <p className="event-index-datetime">{props.eventDate}, {props.startTime}</p>
-            <p className="event-index-citystate">{props.city}, {props.state}</p>
-          </div>
-        </div>
+    <div className="card event-tile-card small-4 large-3">
+      <div className="card-divider event-tile-name">
+        <h5><Link to={`/events/${props.id}`}>{props.name}</Link></h5>
+      </div>
+      <div className="card-section event-tile-image">
+        {image}
+      </div>
+      <div className="card-section text-center">
+        <p className="event-tile-date">{props.eventDate}</p>
+        <p className="event-tile-time">{props.startTime}</p>
+        <p className="event-tile-citystate">{props.city}, {props.state}</p>
       </div>
     </div>
   )

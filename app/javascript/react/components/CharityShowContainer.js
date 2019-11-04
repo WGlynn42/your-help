@@ -10,7 +10,6 @@ const CharityShowContainer = props => {
   const [charityView, setCharityView] = useState("missionStatement")
 
   let charityId = props.charityId
-  debugger
 
   useEffect(() => {fetch(`/api/v1/charities/${charityId}`, {
     credentials: 'same-origin',
@@ -30,7 +29,6 @@ const CharityShowContainer = props => {
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   },[])
-  debugger
 
   let component = ""
 
@@ -47,27 +45,26 @@ const CharityShowContainer = props => {
   let addressButton = 'unselected'
 
   if (charityView === "missionStatement") {
-    component = <MissionStatementContainer charityId={charityId} resetView={resetView}/>
+    component = <MissionStatementContainer charity={props.charity} resetView={resetView}/>
     missionButton ='selected'
     contactButton = 'unselected'
     addressButton = 'unselected'
   }
   if (charityView === "contact") {
-    component = <ContactInfoContainer charityId={charityId} resetView={resetView} />
+    component = <ContactInfoContainer charity={props.charity} resetView={resetView} />
     missionButton ='unselected'
     contactButton = 'selected'
     addressButton = 'unselected'
   }
   if (charityView === "address") {
-    component = <AddressContainer charityId={charityId} resetView={resetView} />
+    component = <AddressContainer charity={props.charity} resetView={resetView} />
     missionButton ='unselected'
     contactButton = 'unselected'
     addressButton = 'selected'
   }
 
-
   return (
-    <div className="grid-y charity-show-background">
+    <div className="grid-y charity-show-container">
         <div className = "grid-y small-12 medium-6 list-block">
           <div className="charity-show-tabs">
             <button className={missionButton} name="missionStatement" id="mission-block" onClick={switchView}>
@@ -83,9 +80,9 @@ const CharityShowContainer = props => {
           <div className="show-component">
             {component}
           </div>
-        </div>
-        <div className="charity-show-comtainer-button button">
-          <Link to="/" style={{color: "white"}}> Return to Homepage </Link>
+          <div className="charity-show-comtainer-button button">
+            <Link to="/" style={{color: "white"}}> Return to Homepage </Link>
+          </div>
         </div>
       </div>
   )

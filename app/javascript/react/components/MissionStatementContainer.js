@@ -24,12 +24,11 @@ const MissionStatementContainer = props => {
     .catch(error => console.error(`Error in fetch: ${error.message}`))
   }, [])
 
-
     return (
       <div>
-        <div className="row text-center mission-statement-container">
-          <p> Hello Mission! </p>
-          <p> {props.missionStatement}</p>
+        <div className="mission-statement-container">
+          <h4> Mission Statement </h4>
+          <p>{props.charity.mission_statement}</p>
         </div>
       </div>
     )

@@ -9,11 +9,9 @@ const CharityTile = props => {
   }
 
   return(
-    <div className="row small-up-2 medium-up-3">
-      <div className="column">
-        <div className="card">
+        <div className="card small-4 large-3">
           <div className="card-divider charity-index-name">
-            <h4><Link to={`/charities/${props.id}`}>{props.name}</Link></h4>
+            <h5><Link to={`/charities/${props.id}`}>{props.name}</Link></h5>
           </div>
           <div className="card-section charity-index-image">
             {image}
@@ -24,25 +22,7 @@ const CharityTile = props => {
             </p>
           </div>
         </div>
-      </div>
-    </div>
   )
 }
 
 export default CharityTile
-
-
-//
-// <div className="cell large-4">
-//     <div className="card charity-tile">
-//       <div className="card-section">
-//         <div className="charity-index-image">
-//           {image}
-//         </div>
-//         <div className="card-section">
-//
-//
-//         </div>
-//       </div>
-//     </div>
-//   </div>
