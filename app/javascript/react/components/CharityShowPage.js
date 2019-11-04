@@ -6,7 +6,7 @@ import CharityShowContainer from './CharityShowContainer'
 
 const CharityShowPage = props => {
   const [errorList, setErrorList] = useState([])
-  const [charityData, setCharity] = useState(
+  const [charityData, setCharityData] = useState(
     {
       name: "",
       address: "",
@@ -48,7 +48,7 @@ const CharityShowPage = props => {
       return body.json()
     })
     .then(json => {
-      setCharity(json)
+      setCharityData(json)
     })
   }, [])
 
@@ -56,47 +56,15 @@ const CharityShowPage = props => {
     <div>
       <div className="charity-show-wrapper">
         <CharityShowTile
-          name={charityData.name}
-          address={charityData.address}
-          address2={charityData.address2}
-          city={charityData.city}
-          state={charityData.state}
-          zip={charityData.zip}
-          phone={charityData.phone}
-          email={charityData.email}
-          website={charityData.website}
-          donationPage={charityData.donation_page}
-          photo={charityData.photo}
-          missionStatement={charityData.mission_statement}
-          contactName={charityData.contact_name}
-          contactRole={charityData.contact_role}
-          contactPhone={charityData.contact_phone}
-          contactEmail={charityData.contact_email}
+        charity={charityData}
         />
-    </div>
-
-      <div className="charity-show-container">
-          <CharityShowContainer
-            charityId={charityData.id}
-            name={charityData.name}
-            address={charityData.address}
-            address2={charityData.address2}
-            city={charityData.city}
-            state={charityData.state}
-            zip={charityData.zip}
-            phone={charityData.phone}
-            email={charityData.email}
-            website={charityData.website}
-            donationPage={charityData.donation_page}
-            photo={charityData.photo}
-            missionStatement={charityData.mission_statement}
-            contactName={charityData.contact_name}
-            contactRole={charityData.contact_role}
-            contactPhone={charityData.contact_phone}
-            contactEmail={charityData.contact_email}
-            />
-        </div>
       </div>
+      <div className="charity-show-container">
+        <CharityShowContainer
+          charity={charityData}
+        />
+      </div>
+    </div>
   )
 }
 

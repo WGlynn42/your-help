@@ -70,9 +70,11 @@ const EventIndexContainer = props => {
   })
 
   return(
-    <div className="grid-x grid-padding-x">
+    <div className="event-index-page-background">
       <div className="cell">
-      {eventTiles}
+        <div className="row event-tile">
+          {eventTiles}
+        </div>
       </div>
     </div>
   )

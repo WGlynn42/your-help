@@ -49,15 +49,22 @@ const CharitiesIndexContainer = props => {
   })
 
   return(
-    <div className="charity-index-page">
-      <div className="charity-index-page-top text-center">
-        <h2 id="charity-index-title">Local Charities</h2>
-        <h5>Select a charity to see more information</h5>
+    <div>
+    <div className="charity-index-page" id="charity-index-title">
+      <h2>Local Charities</h2>
+      <h5>Select a charity to see more information</h5>
+    </div>
+
+    <div className = "row">
+      <div className="charity-tile large-9 columns">
+        <div className="cell">
+          {charityTiles}
+        </div>
       </div>
-      <div className="charity-tile" style={{width: "300px"}}>
-        {charityTiles}
+      <div className="columns large-3 charity-index-page-background">
       </div>
     </div>
+  </div >
   )
 }
 

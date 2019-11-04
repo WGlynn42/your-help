@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
 const AddressContainer = props => {
-  debugger
   return(
-    <div className="row text-center address-info-container">
-      <p> Hello Address!</p>
-      <p>{props.address}</p>
-      <p>{props.city}, {props.state} {props.zip}</p>
+    <div className="address-info-container">
+      <div>
+        <h4> Address Info </h4>
+        <p>{props.charity.address}</p>
+        <p>{props.charity.city}, {props.charity.state} {props.charity.zip}</p>
+      </div>
     </div>
   )
 }

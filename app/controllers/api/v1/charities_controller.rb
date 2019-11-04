@@ -1,4 +1,5 @@
 class Api::V1::CharitiesController < ApiController
+
   def index
     render json: Charity.all
   end
@@ -7,7 +8,7 @@ class Api::V1::CharitiesController < ApiController
     charity = Charity.find(params[:id])
     render json: charity
   end
-  
+
 
   # private
   # def location_params
