@@ -18,16 +18,28 @@
  */
 
 .top-bar {
+  font-family: 'Playball', sans-serif;
   background-color: #1779ba;
   height: 120px;
   padding-left: 25px;
+  border-bottom: solid;
+  border-color: black;
+}
+
+.top-bar:hover{
+  color: gold;
+}
+
+#top-bar-logo {
+  color: white;
+  font-family: 'Playball', sans-serif;
 }
 
 .top-bar-button {
   color: white;
   vertical-align: middle;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   display: inline-block;
   height: 40px;
@@ -45,72 +57,74 @@
  }
 
 .home-page-first-row {
-  padding: 0%;
-  text-align: center;
+
   text-decoration-color: black;
-  margin-top: 50px;
-  margin-left: 100px;
-  min-height: 200px;
-  max-width: 275px;
   background-position: right bottom;
   background-size: contain;
+  border-style: solid;
+  border-color: black;
+  height:600px;
 }
 
 .home-page-first-row-text {
+  padding-top: 20%;
+  padding-left: 10%;
   font-weight: bold;
   font-size: 20px;
   margin-top: 10px;
 }
 
 .home-page-first-row-link {
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 33%;
   vertical-align: center;
   text-align: center;
   background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
 }
 
-.home-page-second-row-text {
-  width: 200px;
-  height: 500px;
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 450px;
+.home-page-second-row {
+  border-style: solid;
+  border-color: black;
+  height:600px;
   font-weight: bold;
   font-size: 20px;
 }
 
-.home-page-second-row {
-  margin-left: 500px;
-  min-height: 400px;
+.home-page-second-row-text {
+  padding-top: 20%;
+  padding-left: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .home-page-second-row-link {
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 25%;
-  vertical-align: middle;
+  vertical-align: center;
   text-align: center;
   background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  width: 100px;
-  height: 40px;
+  width: 120px;
+  height: 50px;
 }
 
 .charity-index-page-background {
   background-image: url("https://images.unsplash.com/photo-1516558781830-2c603b601b59?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jessica-podraza-ZvNaAGYVlEc-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  opacity: 75%;
+  background-size: cover;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
  }
 
 .card {
-  width: 300px;
+  width: 600px;
   font-weight: bold;
   border-style: solid;
   border-color: black;
@@ -125,72 +139,39 @@
 }
 
 .charity-index-name {
-  text-align: left;
-  font-weight: bold;
-  font-style: oblique;
-  height: 80px;
-  vertical-align: middle;
-}
-
-.charity-index-image {
-  margin-left: 25%;
-  width: 50%;
-  max-width: 240px;
-}
-
-.charity-show-header {
-  background-color: lightblue;
-}
-
-.event-show-header {
-  background-color: lightblue;
-}
-
-.charity-index-name {
+  padding-top: 5px;
   height: 100px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.event-tile-card {
-height: 380px;
-margin-left: 5px;
-}
-
-.event-tile-name{
-  height: 80px;
-}
-.event-tile-image {
-  margin-left: 12.5%;
-  margin-bottom: 12.5%;
-  width: 180px;
-  height: 120px;
-}
-
-.event-tile-date {
+.charity-index-citystate {
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
-#event-name-container {
-  background-color: yellow;
-  text-align: center;
-  padding: 5px, 5px;
-  stroke: solid 1px black;
-  border-style: solid;
-  border-color: black;
+.charity-index-image {
+  height: 200px;
+  max-width: 240px;
+  background-size: contain;
+}
+
+.charity-index-tagline {
+  height: 150px;
+  font-style: italic;
+  padding: 2px;
+  font-size: 16px;
+  overflow: scroll;
 }
 
 #charity-name-container {
-  background-color: yellow;
-  text-align: center;
+  margin-top: 50px;
+  color: white;
+  background-color: #1779ba;
   padding: 5px, 5px;
   stroke: solid 1px black;
   border-style: solid;
   border-color: black;
-}
-
-.charity-left-container {
-  background-color: lightblue;
-  padding-left: 10px;
-  stroke: solid 1px black;
 }
 
 .charity-show-image {
@@ -204,6 +185,156 @@ margin-left: 5px;
   border-spacing: 2px;
 }
 
+.charity-show-website-link {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  width: 150px;
+  height: 50px;
+  margin-left: 25%;
+}
+
+.charity-show-donation-link {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  width: 150px;
+  height: 50px;
+}
+
+.charity-image-container {
+  height: 400px;
+  border-style: solid;
+  border-color: black;
+  display: inline-block;
+}
+
+.list-block {
+  width: 600px;
+  margin-left: 20px;
+}
+
+.charity-show-comtainer-button {
+  font-size: 24px;
+  text-align: center;
+}
+
+.charity-show-container {
+  margin-top: 50px;
+  padding-left: 10px;
+  background-color: #1779ba;
+  color: white;
+  padding-left: 10px;
+  stroke: solid 1px black;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  height: 550px;
+  width: 160px;
+}
+
+.charity-show-tabs {
+  color: white;
+  background-color: #1779ba;
+  width: 300px;
+  padding-left: 10px;
+}
+
+#mission-block {
+  margin-top: 15px;
+  margin-right: 20px;
+  background-color: #1779ba;
+  color: white;
+  text-decoration: underline;
+}
+
+#contact-block {
+  margin-top: 15px;
+  margin-right: 20px;
+  background-color: #1779ba;
+  color: white;
+  text-decoration: underline;
+}
+
+#address-block {
+  margin-top: 15px;
+  margin-right: 20px;
+  background-color: #1779ba;
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-info-container {
+  width: 500px;
+  color: white;
+  border-style: solid;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.address-info-container {
+  width: 500px;
+  color: white;
+  border-style: solid;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.mission-statement-container {
+  width: 500px;
+  color: white;
+  border-style: solid;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding: 10px;
+}
+
+.event-tile-card {
+  height: 360px;
+  margin-left: 5px;
+}
+
+.event-tile-name{
+  padding-top: 0px;
+  height: 100px;
+}
+
+.event-tile-image {
+  border-style: solid;
+  border-color: black;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.event-tile-date {
+  text-align: bottom;
+}
+
+.event-index-page-background {
+  background-image: url("https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/13064646_10154248557159036_8143815623671485795_o.jpg?_nc_cat=106&_nc_oc=AQmrRXtXAhmGv50HhtgkonA2D7z0W9OWJhrX4YBdpcDKK376cJGsDlU1Brqpv8MXYKUQZzM8SUR9GoA4VtMGCfj1&_nc_ht=scontent.fbed1-2.fna&oh=cfa9f2a354f7edc68f4be98a3b96e3d2&oe=5E56F970");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-style: solid;
+  border-color: black;
+  margin-top: 10px;
+ }
+
+.event-show-header {
+  color: #1779ba;
+  margin-bottom: 20px;
+}
+
+.event-show-image {
+  margin-left: 12.5%;
+  width: 75%;
+  background-color: #1779ba;
+  border-style: solid;
+  border-color: black;
+}
+
 .event-show-mission {
   border-style: solid;
   border-color: black;
@@ -212,139 +343,51 @@ margin-left: 5px;
   background-color: white;
 }
 
-.charity-show-container {
-  height: 400px;
-  border-style: solid;
-  border-color: black;
-}
-
-.list-block {
-  margin-left: 50px;
-}
-
-#mission-block {
-  margin-top: 15px;
-  margin-right: 20px;
-}
-
-#contact-block {
-  margin-right: 25px;
-}
-
-#address-block {
-  margin-right: 25px;
-}
-
-
-.charity-show-container {
+.event-show-address {
+  color: white;
   background-color: #1779ba;
+  height: 300px;
+}
+
+.event-show-description {
   color: white;
-}
-
-.charity-show-tabs {
-  background-color: white;
-  color: #1779ba;;
-  width: 300px;
-  padding-left: 10px;
-}
-
-.contact-info-container {
-  color: white;
+  background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  margin-top: 50px;
+  margin-left: 15px;
+  padding: 0px, 25px;
 }
 
-.address-info-container {
-  color: white;
-  border-style: solid;
-  border-color: black;
-  margin-top: 50px;
+.event-show-website {
+  font-size: 32px;
 }
 
-.mission-statement-container {
-  width: 800px;
-  color: white;
-  border-style: solid;
-  border-color: black;
-  margin-top: 50px;
-  padding: 10px;
-}
-
-.charity-show-container-button {
-  background-color: steelblue;
-  width: 200px;
-  margin-top: 100px;
-  margin-left: 42%;
-}
-
-#red-container {
-  background-color: red;
-  padding-left: 10px;
-  stroke: solid 1px black;
-  height: 750px;
-  padding-top: 20px;
-}
-
-.charity-show-phone {
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-
-.charity-show-contact {
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-
-/* .charity-show-important-links {
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-} */
-
-.charity-show-address {
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-
-.charity-show-website-link {
+#event-name-container {
   text-align: center;
-  text-decoration: underline;
-  width: 200px;
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin-left: 75px;
-  margin-right: 50px;
-  background-color: white;
-  display:inline-block;
-}
-
-.charity-show-donation-link {
-  text-align: center;
-  text-decoration: underline;
-  width: 200px;
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  background-color: white;
-  display:inline-block;
-}
-
-#green-container {
-  background-color: green;
   padding: 5px, 5px;
   stroke: solid 1px black;
-  height: 200px
+  border-style: solid;
+  border-color: black;
+}
+
+.new-event-form {
+  color: white;
+  background-color: #1779ba;
+  border-style: solid;
+  border-color: black;
+}
+
+.new-event-form-venue-info {
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
+.new-event-form-event-info {
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
+.new-event-form-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

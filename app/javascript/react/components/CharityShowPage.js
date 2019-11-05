@@ -53,18 +53,20 @@ const CharityShowPage = props => {
   }, [])
 
   return (
-    <div>
-      <div className="charity-show-wrapper">
-        <CharityShowTile
-        charity={charityData}
-        />
-      </div>
-      <div className="charity-show-container">
-        <CharityShowContainer
+    <div className="row">
+      <div className="columns large-6">
+        <div className="charity-show-wrapper">
+          <CharityShowTile
           charity={charityData}
-        />
+          />
+        </div>
       </div>
-    </div>
+        <div className="columns large-6 charity-show-container">
+          <CharityShowContainer
+            charity={charityData}
+          />
+        </div>
+      </div>
   )
 }
 
