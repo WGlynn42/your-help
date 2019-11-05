@@ -29,6 +29,7 @@ Charity.create(
   contact_role: "Executive Director",
   contact_phone: "857-233-4178",
   contact_email: "joyce.duvall@christophershaven.org",
+  tagline: "A home for kids when cancer hits home.",
   mission_statement: "Christopher's Haven touches people’s lives in unimaginable ways. It is their home away from home when their child or grandchild is receiving life saving cancer treatment. It is not just a place to stay. It is a place to return to after a hard day, and share experiences with people living similar nightmares. It is a happy place actually, filled with love, support, activities, volunteers, and warmth. It contributes to the healing process while going through treatment and long afterwards. It is family centric, caring not only for the patient, but the entire family unit. There are many people who’s lives have been touched by Christopher’s Haven, and they and their families would like an opportunity to give back financially to help support the organization."
 )
 
@@ -47,6 +48,7 @@ Charity.create(
   contact_role: "Executive Director",
   contact_phone: "781-449-0324",
   contact_email: "kfredericksnapper@crohnscolitisfoundation.org",
+  tagline: "Leading the way for over 3,000,000 patients through research, education, and support.",
   mission_statement: "We serve Maine, Massachusetts, New Hampshire, Rhode Island, and Vermont by funding research, raising awareness and providing education and support to inflammatory bowel disease patients and caregivers."
 )
 
@@ -65,6 +67,7 @@ Charity.create(
   contact_role: "President and CEO",
   contact_phone: "617-427-5200",
   contact_email: "cdamato@gbfb.org",
+  tagline: "Together, with our partners and supporters, we are creating a healthy and hunger free Eastern Massachusetts.",
   mission_statement: "The Greater Boston Food Bank works passionately to end hunger across Eastern Massachusetts by providing our neighbors in need the healthy food and resources they need to thrive."
 )
 
@@ -83,6 +86,7 @@ Charity.create(
   contact_role: "President & Founder",
   contact_phone: "508-628-9090",
   contact_email: "ashley@onemission.org",
+  tagline: "One Mission is a pediatric cancer charity that helps children and families through the emotional and financial challenges of treatment.",
   mission_statement: "One Mission is a pediatric cancer charity that does whatever it takes to get kids through cancer. One Mission programs make living in the hospital less lonely and stressful, bring back joy in a time of fear and uncertainty, and give kids and their loved ones the support they need to get through the emotional and financial challenges of treatment."
 )
 
@@ -101,6 +105,7 @@ Charity.create(
   contact_role: "Event Director",
   contact_phone: "617-367-3322",
   contact_email: "kevin@pitchinginforkids.org",
+  tagline: "Be Kind. Always",
   mission_statement: "Pitching in for Kids, Inc. is a nonprofit organization dedicated to providing specifically earmarked grants designed to improve the lives of children across the New England region through sports-related fundraising events and programs."
 )
 
@@ -119,6 +124,7 @@ Charity.create(
   contact_role: "Assistant Vice President of Event Fundraising",
   contact_phone: "617-632-5089",
   contact_email: "Brenda_Goodell@dfci.harvard.edu",
+  tagline: "Since its founding in 1948, the Jimmy Fund has raised millions of dollars through thousands of grassroots efforts to help save lives and give hope to cancer patients everywhere.",
   mission_statement: "The Jimmy Fund solely supports the fight against cancer at Dana-Farber. Since its founding in 1948, the Jimmy Fund has raised millions of dollars through thousands of community efforts to help save lives and give hope to cancer patients around the world. An official charity of the Boston Red Sox, Pan-Mass Challenge, Massachusetts Chiefs of Police Association, and Variety Children’s Charity of New England, the Jimmy Fund is an American favorite."
 )
 

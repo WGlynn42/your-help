@@ -44,24 +44,24 @@ const CharitiesIndexContainer = props => {
         contactRole={charity.contact_role}
         contactPhone={charity.contact_phone}
         contactEmail={charity.contact_email}
+        tagline={charity.tagline}
       />
     )
   })
 
   return(
     <div>
-    <div className="charity-index-page" id="charity-index-title">
-      <h3>Local Charities</h3>
-      <h5>Select a charity to see more information</h5>
-    </div>
-
-    <div className = "row">
-      <div className="charity-tile large-9 columns">
-        <div className="cell">
-          {charityTiles}
-        </div>
+      <div className="charity-index-page" id="charity-index-title">
+        <h3>Local Charities</h3>
+        <h5>Select a charity to see more information</h5>
       </div>
-      <div className="columns large -3 charity-index-page-background">
+      <div className = "row">
+        <div className="charity-tile large-9 columns">
+          <div className="cell">
+            {charityTiles}
+          </div>
+        </div>
+        <div className="columns large-3 charity-index-page-background">
       </div>
     </div>
   </div >

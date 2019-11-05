@@ -60,6 +60,7 @@ const EventShowPage = props => {
     <div className="event-show-wrapper">
       <EventShowTile
         charity={charityData.name}
+        website={charityData.website}
         name={eventData.name}
         description={eventData.description}
         eventDate={eventData.event_date}
@@ -74,7 +75,6 @@ const EventShowPage = props => {
         eventPage={eventData.event_page}
         eventPhoto={eventData.event_photo}
       />
-
     </div>
   )
 }

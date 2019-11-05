@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const EventTile = props => {
 
   let image
-  if (props.eventPhoto !== null) {
-    image = <img className="event-tile-image" src={props.eventPhoto}></img>
+  if (props.eventPhoto !== null) {;
+    image = <img className="event-tile-image"src={props.eventPhoto}></img>
   }
 
   return(

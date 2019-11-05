@@ -64,8 +64,8 @@ const CharityShowContainer = props => {
   }
 
   return (
-    <div className="grid-y charity-show-container">
-        <div className = "grid-y small-12 medium-6 list-block">
+    <div className="row">
+        <div className = "columns list-block">
           <div className="charity-show-tabs">
             <button className={missionButton} name="missionStatement" id="mission-block" onClick={switchView}>
               Mission<br/>Statement
