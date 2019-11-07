@@ -17,8 +17,6 @@ class Charity < ApplicationRecord
 
   has_many :events
 
-  mount_uploader :avatar, AvatarUploader
-
   def address2
     "#{city}, #{state} #{zip}"
   end
