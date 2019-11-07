@@ -14,8 +14,8 @@ export const App = (props) => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage}/>
-        <Route exact path="/charities" component={CharitiesIndexContainer}/>
         <Route exact path="/charities/:id" component={CharityShowPage}/>
+        <Route exact path="/charities" component={CharitiesIndexContainer}/>
         <Route exact path="/events" component={EventIndexContainer}/>
         <Route exact path="/events/new" component={NewEventContainer}/>
         <Route exact path="/events/:id" component={EventShowPage}/>

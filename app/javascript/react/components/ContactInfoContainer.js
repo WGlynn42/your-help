@@ -5,12 +5,12 @@ const ContactInfoContainer = props => {
     <div>
       <div className="contact-info-container">
         <div>
-          <h4> Main Contact </h4>
-          <p>{props.charity.contact_name}, {props.charity.contact_role}</p>
+          <h4 className="show-container-info"> Main Contact </h4>
+          <p className="show-container-info">{props.charity.contact_name}, {props.charity.contact_role}</p>
         </div>
         <div>
-          <p>{props.charity.contact_phone}</p>
-          <p>{props.charity.contact_email}</p>
+          <p className="show-container-info">{props.charity.contact_phone}</p>
+          <p className="show-container-info">{props.charity.contact_email}</p>
         </div>
       </div>
     </div>

@@ -9,26 +9,26 @@ const CharityShowContainer = props => {
   const [charity, setCharity] = useState({})
   const [charityView, setCharityView] = useState("missionStatement")
 
-  let charityId = props.charityId
-
-  useEffect(() => {fetch(`/api/v1/charities/${charityId}`, {
-    credentials: 'same-origin',
-    })
-    .then((response) => {
-      if (response.ok) {
-        return response
-      } else {
-        let errorMessage = `${response.status} (${response.statusText})`,
-          error = new Error(errorMessage)
-        throw(error)
-      }
-    })
-    .then(response => response.json())
-    .then(body => {
-      setCharity(body.charity)
-    })
-    .catch(error => console.error(`Error in fetch: ${error.message}`))
-  },[])
+  // let charityId = props.charityId
+  //
+  // useEffect(() => {fetch(`/api/v1/charities/${charityId}`, {
+  //   credentials: 'same-origin',
+  //   })
+  //   .then((response) => {
+  //     if (response.ok) {
+  //       return response
+  //     } else {
+  //       let errorMessage = `${response.status} (${response.statusText})`,
+  //         error = new Error(errorMessage)
+  //       throw(error)
+  //     }
+  //   })
+  //   .then(response => response.json())
+  //   .then(body => {
+  //     setCharity(body.charity)
+  //   })
+  //   .catch(error => console.error(`Error in fetch: ${error.message}`))
+  // },[])
 
   let component = ""
 
