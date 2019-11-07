@@ -8,9 +8,9 @@ const CharityShowTile = props => {
   }
 
   return (
-    <div className="row">
-      <div className="columns large-12 text-center" id="charity-name-container">
-        <h2>{props.charity.name}</h2>
+    <div className="row charity-container">
+      <div className="columns large-12 text-center charity-name-container">
+        <h2 id="charity-name-container">{props.charity.name}</h2>
       </div>
       <div className="row large-12 columns charity-image-container">
         <div className="columns large-9" id="charity-logo">

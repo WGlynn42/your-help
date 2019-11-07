@@ -72,11 +72,11 @@ const EventIndexContainer = props => {
   })
 
   return(
-    <div className="row">
-      <div className="columns large-9 event-index-page-tiles">
+    <div>
+      <div className="columns large-8 event-index-page-tiles">
         {eventTiles}
       </div>
-      <div className="columns large-3 event-index-page-background">
+      <div className="columns large-4 event-index-page-background">
       </div>
     </div>
   )

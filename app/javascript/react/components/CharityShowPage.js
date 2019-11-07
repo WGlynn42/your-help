@@ -54,14 +54,14 @@ const CharityShowPage = props => {
 
   return (
     <div className="row">
-      <div className="columns large-6">
+      <div className="columns large-5">
         <div className="charity-show-wrapper">
           <CharityShowTile
           charity={charityData}
           />
         </div>
       </div>
-        <div className="columns large-6 charity-show-container">
+        <div className="columns large-7 charity-show-container">
           <CharityShowContainer
             charity={charityData}
           />
