@@ -34,7 +34,7 @@ Charity.create(
 )
 
 Charity.create(
-  name: "Crohn's and Colitis Foundation - New England",
+  name: "Crohn's and Colitis Foundation",
   address: "72 River Park Street, Suite 202",
   city: "Needham Heights",
   state: "MA",

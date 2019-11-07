@@ -20,7 +20,7 @@
 .top-bar {
   font-family: 'Playball', sans-serif;
   background-color: #1779ba;
-  height: 120px;
+  height: 140px;
   padding-left: 25px;
   border-bottom: solid;
   border-color: black;
@@ -31,20 +31,24 @@
 }
 
 #top-bar-logo {
+  font-size: 60px;
+  text-shadow: 2px 2px #000;
   color: white;
-  font-family: 'Playball', sans-serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .top-bar-button {
   color: white;
   vertical-align: middle;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
+  text-shadow: 2px 2px #000;
   font-weight: bold;
   display: inline-block;
   height: 40px;
-  width: 120px;
+  width: 180px;
   margin-right: 40px;
+  font-family: 'Permanent Marker', cursive;
 }
 
  .home-page-background {
@@ -57,24 +61,37 @@
  }
 
 .home-page-first-row {
-
-  text-decoration-color: black;
-  background-position: right bottom;
-  background-size: contain;
-  border-style: solid;
-  border-color: black;
-  height:600px;
+  height:900px;
 }
 
-.home-page-first-row-text {
-  padding-top: 20%;
-  padding-left: 10%;
+.home-page-title {
+  font-family: 'Playball', sans-serif;
+  color: white;
   font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20%;
+  padding: 10px;
 }
 
-.home-page-first-row-link {
+h1.page-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+  font-family: 'Vollkorn', serif;
+}
+
+.home-page-text {
+  font-family: 'Vollkorn', serif;
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/*
+.home-page-link {
+  color: white;
   font-size: 20px;
   font-weight: bold;
   vertical-align: center;
@@ -83,35 +100,41 @@
   border-style: solid;
   border-color: black;
   width: 120px;
-  height: 50px;
+  height: 40px;
+} */
+
+.home-charities-link {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: center;
+  text-align: center;
+  background-color: #1779ba;
+  border-style: solid;
+  border-color: black;
+  width: 120px;
+  height: 40px;
+  margin-left: 12.5%;
+}
+
+.home-events-link {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: center;
+  text-align: center;
+  background-color: #1779ba;
+  border-style: solid;
+  border-color: black;
+  width: 120px;
+  height: 40px;
+  margin-left: 60%;
 }
 
 .home-page-second-row {
-  border-style: solid;
-  border-color: black;
-  height:600px;
+  height: 900px;
   font-weight: bold;
   font-size: 20px;
-}
-
-.home-page-second-row-text {
-  padding-top: 20%;
-  padding-left: 50%;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-.home-page-second-row-link {
-  font-size: 20px;
-  font-weight: bold;
-  vertical-align: center;
-  text-align: center;
-  background-color: #1779ba;
-  border-style: solid;
-  border-color: black;
-  width: 120px;
-  height: 50px;
 }
 
 .charity-index-page-background {
@@ -120,6 +143,7 @@
   background-size: cover;
   background-position: center;
   border-style: solid;
+  height: 1000px;
   border-color: black;
  }
 
@@ -130,41 +154,61 @@
   border-color: black;
   display: inline-block;
   margin: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
 #charity-index-title {
+  font-size: 56px;
   padding-top: 10px;
   color: #1779ba;
   text-align: center;
+  font-family: 'Vollkorn', serif;
 }
 
-.charity-index-name {
+#charity-index-line {
+  font-size: 30px;
   padding-top: 5px;
+  color: #1779ba;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+
+#charity-index-name {
+  font-size: 22px;
+  padding-top: 0px;
   height: 100px;
   text-align: center;
   font-weight: bold;
 }
 
 .charity-index-citystate {
+  font-size: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .charity-index-image {
+  padding-top: 0px;
   height: 200px;
   max-width: 240px;
   background-size: contain;
 }
 
 .charity-index-tagline {
+  margin: 0px;
   height: 150px;
   font-style: italic;
   padding: 2px;
-  font-size: 16px;
+  font-size: 20px;
   overflow: scroll;
 }
 
-#charity-name-container {
+.charity-container {
+  height: 500px;
+}
+
+.charity-name-container {
+  font-size: 48px;
   margin-top: 50px;
   color: white;
   background-color: #1779ba;
@@ -172,6 +216,11 @@
   stroke: solid 1px black;
   border-style: solid;
   border-color: black;
+}
+
+#charity-name-container {
+  height: 100px;
+  font-size: 40px;
 }
 
 .charity-show-image {
@@ -189,16 +238,16 @@
   color: white;
   text-align: center;
   text-decoration: underline;
-  width: 150px;
+  width: 130px;
   height: 50px;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .charity-show-donation-link {
   color: white;
   text-align: center;
   text-decoration: underline;
-  width: 150px;
+  width: 130px;
   height: 50px;
 }
 
@@ -229,43 +278,46 @@
   display: inline-block;
   border-style: solid;
   border-color: black;
-  height: 550px;
+  height: 600px;
   width: 160px;
 }
 
 .charity-show-tabs {
   color: white;
   background-color: #1779ba;
-  width: 300px;
+  width: 600px;
   padding-left: 10px;
 }
 
 #mission-block {
+  font-size: 24px;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-left: 50px;
   background-color: #1779ba;
   color: white;
   text-decoration: underline;
 }
 
 #contact-block {
+  font-size: 24px;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-left: 50px;
   background-color: #1779ba;
   color: white;
   text-decoration: underline;
 }
 
 #address-block {
+  font-size: 24px;
   margin-top: 15px;
-  margin-right: 20px;
+  margin-left: 50px;
   background-color: #1779ba;
   color: white;
   text-decoration: underline;
 }
 
 .contact-info-container {
-  width: 500px;
+  width: 600px;
   color: white;
   border-style: solid;
   margin-left: 10px;
@@ -274,16 +326,15 @@
 }
 
 .address-info-container {
-  width: 500px;
+  width: 600px;
   color: white;
-  border-style: solid;
   margin-left: 10px;
   margin-top: 25px;
   padding: 10px;
 }
 
 .mission-statement-container {
-  width: 500px;
+  width: 600px;
   color: white;
   border-style: solid;
   margin-left: 10px;
@@ -291,24 +342,51 @@
   padding: 10px;
 }
 
-.event-tile-card {
-  height: 360px;
-  margin-left: 5px;
+.address-container-google-maps {
+  padding-top: 10px;
 }
 
-.event-tile-name{
-  padding-top: 0px;
+.show-container-info {
+  padding: 0px;
+  margin: 0px;
+}
+
+.event-tile-card {
+  height: 360px;
+}
+
+#event-tile-name {
+  padding: 0px;
   height: 100px;
+  font-size: 20px;
 }
 
 .event-tile-image {
   border-style: solid;
-  border-color: black;
+  border-color: red;
+  height:inherit;
   width: 75%;
   margin-left: 12.5%;
 }
 
 .event-tile-date {
+  font-size: 20px;
+  padding-top: 0px;
+  margin: 0px;
+  text-align: bottom;
+}
+
+.event-tile-time {
+  font-size: 20px;
+  padding-top: 0px;
+  margin: 0px;
+  text-align: bottom;
+}
+
+.event-tile-citystate {
+  font-size: 20px;
+  padding-top: 0px;
+  margin: 0px;
   text-align: bottom;
 }
 
@@ -320,6 +398,7 @@
   border-style: solid;
   border-color: black;
   margin-top: 10px;
+  height: 1000px;
  }
 
 .event-show-header {

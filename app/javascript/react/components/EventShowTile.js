@@ -36,15 +36,6 @@ const CharityShowTile = props => {
               <hr />
             </div>
           </div>
-
-        </div>
-
-          <div className="row">
-
-        </div>
-
-        <div className="row">
-
         </div>
        </div>
       </div>
