@@ -18,7 +18,6 @@
  */
 
 .top-bar {
-  font-family: 'Playball', sans-serif;
   background-color: #1779ba;
   height: 140px;
   padding-left: 25px;
@@ -26,7 +25,7 @@
   border-color: black;
 }
 
-.top-bar:hover{
+.top-bar-button:hover{
   color: gold;
 }
 
@@ -37,18 +36,26 @@
   font-family: 'Permanent Marker', cursive;
 }
 
+#top-bar-logo:hover {
+  color: gold;
+}
+
 .top-bar-button {
   color: white;
-  vertical-align: middle;
+  vertical-align: center;
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   text-shadow: 2px 2px #000;
   font-weight: bold;
   display: inline-block;
-  height: 40px;
+  height: 60px;
   width: 180px;
   margin-right: 40px;
   font-family: 'Permanent Marker', cursive;
+}
+
+.top-bar-right-section {
+  margin-right: 20px;
 }
 
  .home-page-background {
@@ -62,10 +69,15 @@
 
 .home-page-first-row {
   height:900px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home-page-first-row:hover{
+  color: white;
 }
 
 .home-page-title {
-  font-family: 'Playball', sans-serif;
   color: white;
   font-weight: bold;
   margin-top: 20%;
@@ -79,43 +91,21 @@ h1.page-title {
   font-family: 'Vollkorn', serif;
 }
 
-.home-page-text {
-  font-family: 'Vollkorn', serif;
-  color: white;
-  text-shadow: 2px 2px #000;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: 10px;
-  padding: 10px;
-}
-
-/*
-.home-page-link {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  vertical-align: center;
-  text-align: center;
-  background-color: #1779ba;
-  border-style: solid;
-  border-color: black;
-  width: 120px;
-  height: 40px;
-} */
-
 .home-charities-link {
   color: white;
   font-size: 20px;
   font-weight: bold;
   vertical-align: center;
   text-align: center;
-  background-color: #1779ba;
+  background-color: red;
   border-style: solid;
   border-color: black;
-  width: 120px;
+  border-radius: 5%;
+  width: 150px;
   height: 40px;
   margin-left: 12.5%;
 }
+
 
 .home-events-link {
   color: white;
@@ -126,7 +116,8 @@ h1.page-title {
   background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  width: 120px;
+  border-radius: 10%;
+  width: 150px;
   height: 40px;
   margin-left: 60%;
 }
@@ -154,7 +145,15 @@ h1.page-title {
   border-color: black;
   display: inline-block;
   margin: 10px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 10px 10px #888888;
+}
+
+.card:hover{
+ margin-top: 5px;
+ margin-bottom: 10px;
+ margin-left: 20px;
+ margin-right: 10px;
+ border: 8px solid #FEE59D;
 }
 
 #charity-index-title {
@@ -175,10 +174,10 @@ h1.page-title {
 
 #charity-index-name {
   font-size: 22px;
+  font-weight: bold;
   padding-top: 0px;
   height: 100px;
   text-align: center;
-  font-weight: bold;
 }
 
 .charity-index-citystate {
@@ -263,9 +262,12 @@ h1.page-title {
   margin-left: 20px;
 }
 
-.charity-show-comtainer-button {
+.charity-show-tile-button {
   font-size: 24px;
   text-align: center;
+  width: 300px;
+  margin-left: 20%;
+  margin-top: 10px;
 }
 
 .charity-show-container {
@@ -278,7 +280,7 @@ h1.page-title {
   display: inline-block;
   border-style: solid;
   border-color: black;
-  height: 600px;
+  height: 650px;
   width: 160px;
 }
 
@@ -346,7 +348,6 @@ h1.page-title {
 .address-container-google-maps {
   width: 600px;
   padding: 12.5%;
-  border-style: solid;
 }
 
 .show-container-info {
@@ -355,18 +356,20 @@ h1.page-title {
 }
 
 .event-tile-card {
-  height: 360px;
+  height: 420px;
 }
 
 #event-tile-name {
   padding: 0px;
-  height: 100px;
+  height: 80px;
   font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .event-tile-image {
   border-style: solid;
-  border-color: red;
+  border-color: black;
   height:inherit;
   width: 75%;
   margin-left: 12.5%;
@@ -407,6 +410,7 @@ h1.page-title {
 .event-show-header {
   color: #1779ba;
   margin-bottom: 20px;
+  text-shadow: 0.5px 0.5px #000;
 }
 
 .event-show-image {

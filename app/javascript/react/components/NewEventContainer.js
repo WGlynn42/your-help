@@ -72,7 +72,6 @@ const NewEventContainer = props => {
     .then(response => response.json())
     .then(eventBody => {
       if (eventBody.new_event){
-        debugger
         // clearForm()
         // setErrorList([])
         setEvents(eventBody.new_event)
@@ -83,7 +82,6 @@ const NewEventContainer = props => {
     .catch(error => console.error(`Error in fetch: ${error.message}`))
     }
     if (shouldRedirect){
-      debugger
       return <Redirect to="/events" />
     }
 

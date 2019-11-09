@@ -9,11 +9,12 @@ const EventTile = props => {
   }
 
   return(
-    <div className="card event-tile-card small-2 large-2">
+    <div className="card event-tile-card small-2 large-3">
       <div className="card-divider event-tile-name">
         <h5 id="event-tile-name"><Link to={`/events/${props.id}`}>{props.name}</Link></h5>
       </div>
         <div className="card-section event-tile-image-image">
+          <p>{props.charity}</p>
           {image}
         </div>
       <div className="card-section text-center">

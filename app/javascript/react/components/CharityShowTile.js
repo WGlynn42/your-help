@@ -25,6 +25,9 @@ const CharityShowTile = props => {
           </div>
         </div>
       </div>
+      <div className="charity-show-tile-button button">
+        <a href="/" style={{color: "white"}}>Return to Homepage </a>
+      </div>
     </div>
 
 
