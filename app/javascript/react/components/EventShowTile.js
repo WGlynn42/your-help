@@ -6,6 +6,7 @@ const CharityShowTile = props => {
   if (props.eventPhoto !== null) {
     image = <img src={props.eventPhoto}></img>
   }
+  debugger
   return (
     <div>
       <div className="row event-tile">
@@ -23,9 +24,11 @@ const CharityShowTile = props => {
              <p><a href={props.eventPage}>Event Website</a></p>
            </div>
          </div>
+
           <div className="event-show-description columns large-4">
             <h3> Event Description</h3>
             <p>{props.description}</p>
+
             <div className="event-show-address columns large-12">
               <hr />
               <h3>Event Venue</h3>

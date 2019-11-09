@@ -9,9 +9,7 @@ const HomePage = props => {
           <div className="home-page-title">
             <h1 className="page-title">Find a charity!</h1>
           </div>
-            <div className="home-page-text">
-              <p>Hello from the first row!</p>
-            </div>
+
             <div className="home-charities-link">
               <Link to="/charities" style={{color: "white"}}>Charities</Link>
             </div>
@@ -22,9 +20,7 @@ const HomePage = props => {
           <div className="cell home-page-title">
             <h1 className="page-title">Find an event!</h1>
           </div>
-          <div className="home-page-text">
-            <p>Hello from the second row!</p>
-          </div>
+
           <div className="home-events-link">
               <Link to="/events"  style={{color: "white"}}>Events</Link>
             </div>
