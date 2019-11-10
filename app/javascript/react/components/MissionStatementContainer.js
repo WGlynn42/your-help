@@ -27,7 +27,7 @@ const MissionStatementContainer = props => {
     return (
       <div>
         <div className="mission-statement-container">
-          <h4 className="show-container-info"> Mission Statement </h4>
+          <h3 className="show-container-info-header"> Mission Statement </h3>
           <p className="show-container-info">{props.charity.mission_statement}</p>
         </div>
       </div>

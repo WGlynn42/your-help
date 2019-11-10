@@ -19,7 +19,7 @@ const CharityTile = props => {
             </p>
           </div>
           <div className="card-section charity-index-image">
-            {image}
+            <Link to={`/charities/${props.id}`}>{image}</Link>
           </div>
 
           <div className="card-section">

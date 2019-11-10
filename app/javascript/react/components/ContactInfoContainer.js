@@ -5,7 +5,7 @@ const ContactInfoContainer = props => {
     <div>
       <div className="contact-info-container">
         <div>
-          <h4 className="show-container-info"> Main Contact </h4>
+          <h3 className="show-container-info-header"> Main Contact </h3>
           <p className="show-container-info">{props.charity.contact_name}, {props.charity.contact_role}</p>
         </div>
         <div>
