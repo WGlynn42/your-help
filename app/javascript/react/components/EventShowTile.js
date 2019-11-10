@@ -6,7 +6,8 @@ const CharityShowTile = props => {
   if (props.eventPhoto !== null) {
     image = <img src={props.eventPhoto}></img>
   }
-  debugger
+
+
   return (
     <div>
       <div className="row event-tile">
@@ -21,7 +22,7 @@ const CharityShowTile = props => {
               {image}
            </div>
            <div className="event-show-website text-center columns large-12">
-             <p><a href={props.eventPage}>Event Website</a></p>
+             <p><a href={props.eventPage} style={{color: "white"}}>Event Website</a></p>
            </div>
          </div>
 
@@ -32,11 +33,11 @@ const CharityShowTile = props => {
             <div className="event-show-address columns large-12">
               <hr />
               <h3>Event Venue</h3>
-              <h6>{props.venue}</h6>
+              <h5 id="event-show-venue"><a href={props.venueWebsite} style={{color: "white"}}>{props.venue}</a></h5>
               <p>{props.address}</p>
               <p>{props.city}, {props.state} {props.zip}</p>
-              <p><a href={props.venueWebsite}>{props.venue}</a></p>
-              <hr />
+              <br />
+              <a href={props.venueWebsite} style={{color: "white"}}>{props.venue}'s Website</a>
             </div>
           </div>
         </div>

@@ -73,6 +73,10 @@ const EventIndexContainer = props => {
 
   return(
     <div>
+      <div  className="event-index-page">
+        <h2 id="charity-index-title">Events</h2>
+        <h4 id="charity-index-line">Select an event to see more information</h4>
+      </div>
       <div className="columns large-8 event-index-page-tiles">
         {eventTiles}
       </div>

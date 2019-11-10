@@ -73,10 +73,6 @@
   font-size: 20px;
 }
 
-.home-page-first-row:hover{
-  color: white;
-}
-
 .home-page-title {
   color: white;
   font-weight: bold;
@@ -97,15 +93,21 @@ h1.page-title {
   font-weight: bold;
   vertical-align: center;
   text-align: center;
-  background-color: red;
+  background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  border-radius: 5%;
+  border-radius: 10%;
   width: 150px;
   height: 40px;
   margin-left: 12.5%;
 }
 
+.home-charities-link:hover{
+font-size: 28px;
+ margin-left: 12.5%;
+ height: 60px;
+ border: 8px solid #black;
+}
 
 .home-events-link {
   color: white;
@@ -120,6 +122,13 @@ h1.page-title {
   width: 150px;
   height: 40px;
   margin-left: 60%;
+}
+
+.home-events-link:hover{
+ font-size: 28px;
+ margin-left: 60%;
+ height: 60px;
+ border: 8px solid #black;
 }
 
 .home-page-second-row {
@@ -145,7 +154,8 @@ h1.page-title {
   border-color: black;
   display: inline-block;
   margin: 10px;
-  box-shadow: 10px 10px #888888;
+  box-shadow: 5px 5px #888888;
+  width: 120%;
 }
 
 .card:hover{
@@ -156,9 +166,14 @@ h1.page-title {
  border: 8px solid #FEE59D;
 }
 
+.card-section {
+  margin: 0px;
+  padding: 10px;
+}
+
 #charity-index-title {
   font-size: 56px;
-  padding-top: 10px;
+  padding-top: 5px;
   color: #1779ba;
   text-align: center;
   font-family: 'Vollkorn', serif;
@@ -175,15 +190,20 @@ h1.page-title {
 #charity-index-name {
   font-size: 22px;
   font-weight: bold;
-  padding-top: 0px;
-  height: 100px;
+  height: 80px;
   text-align: center;
+  vertical-align: text-top;
+}
+
+.card-divider {
+  background-color: white;
 }
 
 .charity-index-citystate {
   font-size: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .charity-index-image {
@@ -191,6 +211,7 @@ h1.page-title {
   height: 200px;
   max-width: 240px;
   background-size: contain;
+
 }
 
 .charity-index-tagline {
@@ -198,7 +219,7 @@ h1.page-title {
   height: 150px;
   font-style: italic;
   padding: 2px;
-  font-size: 20px;
+  font-size: 16px;
   overflow: scroll;
 }
 
@@ -209,6 +230,7 @@ h1.page-title {
 .charity-name-container {
   font-size: 48px;
   margin-top: 50px;
+  margin-right: 10px;
   color: white;
   background-color: #1779ba;
   padding: 5px, 5px;
@@ -218,8 +240,11 @@ h1.page-title {
 }
 
 #charity-name-container {
-  height: 100px;
-  font-size: 40px;
+  font-family: 'Vollkorn', serif;
+  margin-top: 12px;
+  height: 80px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .charity-show-image {
@@ -234,20 +259,33 @@ h1.page-title {
 }
 
 .charity-show-website-link {
-  color: white;
+  font-size: 16px;
   text-align: center;
-  text-decoration: underline;
   width: 130px;
   height: 50px;
   margin-left: 20%;
 }
 
+.charity-show-website-link:hover {
+  padding-top: 0px;
+  font-size: 20px;
+  height: 60px;
+  border: 8px solid white;
+}
+
 .charity-show-donation-link {
-  color: white;
+  font-size: 16px;
   text-align: center;
-  text-decoration: underline;
   width: 130px;
   height: 50px;
+  margin-left: 5px;
+}
+
+.charity-show-donation-link:hover {
+  padding-top: 0px;
+  font-size: 20px;
+  height: 60px;
+  border: 8px solid #white;
 }
 
 .charity-image-container {
@@ -275,16 +313,15 @@ h1.page-title {
   padding-left: 10px;
   background-color: #1779ba;
   color: white;
-  padding-left: 10px;
-  stroke: solid 1px black;
   display: inline-block;
   border-style: solid;
   border-color: black;
-  height: 650px;
+  height: 600px;
   width: 160px;
 }
 
 .charity-show-tabs {
+  font-family: 'Vollkorn', serif;
   color: white;
   background-color: #1779ba;
   width: 600px;
@@ -292,30 +329,49 @@ h1.page-title {
 }
 
 #mission-block {
+  border-style: solid;
   font-size: 24px;
   margin-top: 15px;
   margin-left: 50px;
+  padding: 20px;
   background-color: #1779ba;
   color: white;
-  text-decoration: underline;
 }
 
+#mission-block:hover {
+  font-size: 28px;
+  border-style: solid;
+  border-color: white;
+  color: gold;
+}
+
+
 #contact-block {
+  border-style: solid;
   font-size: 24px;
   margin-top: 15px;
   margin-left: 50px;
   background-color: #1779ba;
   color: white;
-  text-decoration: underline;
+}
+
+#contact-block:hover {
+  font-size: 28px;
+  color: gold;
 }
 
 #address-block {
+  border-style: solid;
   font-size: 24px;
   margin-top: 15px;
   margin-left: 50px;
   background-color: #1779ba;
   color: white;
-  text-decoration: underline;
+}
+
+#address-block:hover {
+  font-size: 28px;
+  color: gold;
 }
 
 .contact-info-container {
@@ -323,8 +379,8 @@ h1.page-title {
   color: white;
   border-style: solid;
   margin-left: 10px;
-  margin-top: 25px;
-  padding: 10px;
+  margin-top: 5px;
+  padding: 25px;
 }
 
 .address-info-container {
@@ -332,8 +388,8 @@ h1.page-title {
   color: white;
   border-style: solid;
   margin-left: 10px;
-  margin-top: 25px;
-  padding: 10px;
+  margin-top: 5px;
+  padding: 25px;
 }
 
 .mission-statement-container {
@@ -341,39 +397,48 @@ h1.page-title {
   color: white;
   border-style: solid;
   margin-left: 10px;
-  margin-top: 25px;
-  padding: 10px;
+  margin-top: 5px;
+  padding: 25px;
 }
 
 .address-container-google-maps {
   width: 600px;
-  padding: 12.5%;
+  margin-top: 20px;
 }
 
-.show-container-info {
+.show-container-info-header {
   padding: 0px;
   margin: 0px;
 }
 
+.show-container-info {
+  padding: 0px;
+  margin-top: 0px;
+}
+
 .event-tile-card {
   height: 420px;
+  width: 110%;
 }
 
 #event-tile-name {
-  padding: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
   height: 80px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
+  border-bottom: solid;
 }
 
-.event-tile-image {
-  border-style: solid;
-  border-color: black;
-  height:inherit;
-  width: 75%;
-  margin-left: 12.5%;
-}
+
+.event-tile-image-tile {
+  height: 150px;
+  .event-tile-image {
+    height: inherit;
+    overflow: hidden;
+    }
+  }
 
 .event-tile-date {
   font-size: 20px;
@@ -397,7 +462,7 @@ h1.page-title {
 }
 
 .event-index-page-background {
-  background-image: url("https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/13064646_10154248557159036_8143815623671485795_o.jpg?_nc_cat=106&_nc_oc=AQmrRXtXAhmGv50HhtgkonA2D7z0W9OWJhrX4YBdpcDKK376cJGsDlU1Brqpv8MXYKUQZzM8SUR9GoA4VtMGCfj1&_nc_ht=scontent.fbed1-2.fna&oh=cfa9f2a354f7edc68f4be98a3b96e3d2&oe=5E56F970");
+  background-image: url("https://scontent.fbed1-2.fna.fbcdn.net/v/t31.0-8/13247837_10154248557224036_506737132975606134_o.jpg?_nc_cat=102&_nc_oc=AQmZUiVEJoUMyOHzoeM5fQiLKviEwTtXU1rNBdnNrkBOM_zy64AXET2VKvMR8RYNcaO75rRRYpWxGSrX9eBb4ocd&_nc_ht=scontent.fbed1-2.fna&oh=1db24ce5ce48a5807c79143bab56a21e&oe=5E5B50C3");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -421,13 +486,6 @@ h1.page-title {
   border-color: black;
 }
 
-.event-show-mission {
-  border-style: solid;
-  border-color: black;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
 
 .event-show-address {
   color: white;
@@ -440,12 +498,30 @@ h1.page-title {
   background-color: #1779ba;
   border-style: solid;
   border-color: black;
-  margin-left: 15px;
-  padding: 0px, 25px;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+#event-show-venue {
+  padding-right: 0px;
 }
 
 .event-show-website {
-  font-size: 32px;
+  border-style: solid;
+  border-color: black;
+  background-color: #1779ba;
+  width: 50%;
+  height: 50px;
+  font-size: 24px;
+  margin-right: 25%;
+  margin-top: 10px;
+}
+
+.event-show-website:hover {
+  font-size: 28px;
+  border-style: solid;
+  border-color: gold;
 }
 
 #event-name-container {
